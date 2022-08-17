@@ -19,6 +19,6 @@ Use this format in your mod so Album will display it properly: ``[BepInPlugin("A
  changing the parameters as necessary: 
 
 ```C#
-new ModDescription("Mod's name exactly as it is in the GUID", "Description of your mod")
+new ModDescription("Mod's ID as it is in the GUID", "Description of your mod")
 ```
 Your mod's description should now be displayed in Album. Remember to **not** change your mod's ID as it will cause problems in Album and other mods.
