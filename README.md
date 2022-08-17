@@ -1,5 +1,5 @@
 # Album
-![GithubAllDownloads](https://img.shields.io/github/downloads/404Bones/Album/total?style=flat-square)
+![GithubAllDownloads](https://img.shields.io/github/downloads/404Bones/Album/total)
 
 A mod manager for Brutal Orchestra.
 
