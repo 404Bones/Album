@@ -14,7 +14,7 @@ By default, your mod will show up in Album once it's installed, displaying the n
 Use this format in your mod so Album will display it properly: ``[BepInPlugin("Author.ModID", "ModName", "ModVersion")]``
 
 1. In your IDE of choice, add Album.dll as a dependency
-2. Add `using Album;` and `using BepInEx.Bootstrap` to the top of your main class
+2. Add `using Album;` and `using BepInEx.Bootstrap;` to the top of your main class
 3. In the `Awake()` or `OnEnable()` function of your main class (which inherits from `BaseUnityPlugin`) add this line of code,
  changing the parameters as necessary: 
 
