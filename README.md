@@ -9,7 +9,7 @@ A mod manager for Brutal Orchestra.
 3. Download the latest release of Album from https://github.com/404Bones/Album/releases and drop the file into the `plugins` folder of the `BepInEx` folder
 4. Start the game, you should now see a "Mods" button on the bottom right of the main menu
 
-## How to add your mod's description to Album
+## How to add your mod's description and icons to Album
 By default, your mod will show up in Album once it's installed, displaying the name, author, and version of the mod.
 Use this format in your mod so Album will display it properly: ``[BepInPlugin("Author.ModID", "ModName", "ModVersion")]``
 
@@ -20,13 +20,14 @@ Use this format in your mod so Album will display it properly: ``[BepInPlugin("A
  changing the parameters as necessary: 
 
 ```C#
-//Add description if Album is installed
+//Add description and icons if Album is installed
             foreach (var plugin in Chainloader.PluginInfos)
             {
                 var metadata = plugin.Value.Metadata;
                 if (metadata.GUID == "Bones404.Album")
                 {
                     new ModDescription("Author.ModID", "ModName", "ModVersion")
+                    Album.Album.AddMenuIcon(ResourceLoader.LoadSprite("ModIconName"));
                     break;
                 }
             }
