@@ -1,0 +1,81 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<LangVersion>9.0</LangVersion>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="crooked.png" />
+	  <None Remove="EmbeddedAssemblies\Newtonsoft.Json.dll" />
+	  <None Remove="Textures\ModsButton.png" />
+	  <None Remove="Textures\ModsMenuBackground.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Textures\crooked.png" />
+	  <EmbeddedResource Include="EmbeddedAssemblies\Newtonsoft.Json.dll" />
+	  <EmbeddedResource Include="Textures\ModsButton.png" />
+	  <EmbeddedResource Include="Textures\ModsMenuBackground.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="Assembly-CSharp">
+	    <HintPath>..\..\Files 2\Folders\BO Modding References\Assembly-CSharp.dll</HintPath>
+	  </Reference>
+	  <Reference Include="BepInEx">
+	    <HintPath>..\..\Files 2\Folders\BO Modding References\BepInEx.dll</HintPath>
+	  </Reference>
+	  <Reference Include="FMODUnity">
+	    <HintPath>..\..\Files 2\Folders\BO Modding References\FMODUnity.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Mono.Cecil">
+	    <HintPath>..\..\Files 2\Folders\BO Modding References\Mono.Cecil.dll</HintPath>
+	  </Reference>
+	  <Reference Include="MonoMod.RuntimeDetour">
+	    <HintPath>..\..\Files 2\Folders\BO Modding References\MonoMod.RuntimeDetour.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.InputSystem">
+	    <HintPath>..\..\Files 2\Folders\BO Modding References\Unity.InputSystem.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.TextMeshPro">
+	    <HintPath>..\..\Files 2\Folders\BO Modding References\Unity.TextMeshPro.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine">
+	    <HintPath>..\..\Files 2\Folders\BO Modding References\UnityEngine.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.AnimationModule">
+	    <HintPath>..\..\Files 2\Folders\BO Modding References\UnityEngine.AnimationModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.AssetBundleModule">
+	    <HintPath>..\..\Files 2\Folders\BO Modding References\UnityEngine.AssetBundleModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.CoreModule">
+	    <HintPath>..\..\Files 2\Folders\BO Modding References\UnityEngine.CoreModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.ImageConversionModule">
+	    <HintPath>..\..\Files 2\Folders\BO Modding References\UnityEngine.ImageConversionModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.ParticleSystemModule">
+	    <HintPath>..\..\Files 2\Folders\BO Modding References\UnityEngine.ParticleSystemModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.TextCoreModule">
+	    <HintPath>..\..\Files 2\Folders\BO Modding References\UnityEngine.TextCoreModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.TextRenderingModule">
+	    <HintPath>..\..\Files 2\Folders\BO Modding References\UnityEngine.TextRenderingModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UI">
+	    <HintPath>..\..\Files 2\Folders\BO Modding References\UnityEngine.UI.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UIModule">
+	    <HintPath>..\..\Files 2\Folders\BO Modding References\UnityEngine.UIModule.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+</Project>
