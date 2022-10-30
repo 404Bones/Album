@@ -118,11 +118,19 @@
 
         public static void AddMenuIcon(Sprite sprite)
         {
-            GameObject versionIcon = GameObject.Find("Exquisite");
-            GameObject modIcon = Instantiate(versionIcon, versionIcon.transform.parent);
-            modIcon.GetComponentInChildren<Image>().sprite = sprite;
-            modIcon.transform.localPosition = new Vector3(10 + iconIndex * 48, 0, 0);
-            iconIndex++;
+            GameObject versionIcon;
+            foreach (GameObject item in FindObjectsOfType(typeof(GameObject)))
+            {
+                if (item.name == "Exquisite")
+                {
+                    versionIcon = item;
+                    GameObject modIcon = Instantiate(versionIcon, versionIcon.transform.parent);
+                    modIcon.GetComponentInChildren<Image>().sprite = sprite;
+                    modIcon.transform.localPosition = new Vector3(120 + iconIndex * 48, 0, 0);
+                    iconIndex++;
+                    break;
+                }
+            }
         }
     }
 }
