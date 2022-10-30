@@ -15,7 +15,7 @@ Use this format in your mod so Album will display it properly: ``[BepInPlugin("A
 
 1. In your IDE of choice, add Album.dll as a dependency
 2. Add `using Album;` and `using BepInEx.Bootstrap;` to the top of your main class
-3. Add [BepInDependency("Bones404.Album", BepInDependency.DependencyFlags.SoftDependency)] below your BepInPlugin definition so that your mod loads after Album.
+3. Add `[BepInDependency("Bones404.Album", BepInDependency.DependencyFlags.SoftDependency)]` below your BepInPlugin definition so that your mod loads after Album.
 3. In the `Awake()` or `OnEnable()` function of your main class (which inherits from `BaseUnityPlugin`) add this line of code,
  changing the parameters as necessary: 
 
