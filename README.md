@@ -6,7 +6,7 @@ A mod manager for Brutal Orchestra.
 ## How to use:
 1. Download BepInEx 5.4 from https://github.com/BepInEx/BepInEx/releases
 2. Extract the contents of the ZIP file into Brutal Orchestra's game directory
-3. Download the latest release of Album from https://github.com/404Bones/Album/releases and drop the file into the `plugins` folder of the `BepInEx` folder
+3. Download the latest release of Album from https://github.com/404Bones/Album/releases (*DOWNLOAD ONLY THE .DLL*) and drop the file into the `plugins` folder of the `BepInEx` folder
 4. Start the game, you should now see a "Mods" button on the bottom right of the main menu
 
 ## How to add your mod's description and icons to Album
