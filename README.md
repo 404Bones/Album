@@ -20,13 +20,13 @@ Use this format in your mod so Album will display it properly: ``[BepInPlugin("A
  changing the parameters as necessary: 
 
 ```C#
-//Add description and icons if Album is installed
+            //Add description and icons if Album is installed
             foreach (var plugin in Chainloader.PluginInfos)
             {
                 var metadata = plugin.Value.Metadata;
                 if (metadata.GUID == "Bones404.Album")
                 {
-                    new ModDescription("Author.ModID", "ModName", "ModVersion")
+                    new ModDescription("TestMod", "A test mod for Brutal Orchestra");
                     Album.Album.AddMenuIcon(ResourceLoader.LoadSprite("ModIconName"));
                     break;
                 }
